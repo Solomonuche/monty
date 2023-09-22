@@ -1,0 +1,5 @@
+# Ignore a bytecodes test directory and its contents
+bytecodes/
+
+# Ignore test exe
+monty

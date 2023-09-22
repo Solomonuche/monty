@@ -1,0 +1,31 @@
+#include "monty.h"
+/**
+ * pall - a function that displays contents of a stack
+ * @stack: linked list
+ * @line_number: line number
+ *
+ * Return: (nothing)
+ */
+
+void pall(stack_t **stack, unsigned int line_number)
+{
+	stack_t *temp;
+	
+	(void) line_number;
+
+	if (*stack == NULL)
+		return;
+
+	temp = *stack;
+
+	while (temp->next != 0)
+	{
+		temp = temp->next;
+	}
+
+	while (temp != NULL)
+	{
+		printf("%d\n", temp->n);
+		temp = temp->prev;
+	}
+}
