@@ -19,11 +19,11 @@ void pint(stack_t **stack, unsigned int line_number)
 	}
 
 	temp = *stack;
-
-	while (temp->next != 0)
-	{
-		temp = temp->next;
-	}
-
+	/*
+	 * while (temp->next != 0)
+	 * {
+	 *	temp = temp->next;
+	 * }
+	 */
 	printf("%d\n", temp->n);
 }
