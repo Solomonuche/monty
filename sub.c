@@ -21,7 +21,7 @@ void sub(stack_t **stack, unsigned int line_number)
 
 	temp = gvar->top;
 
-	result = temp->prev->n - temp->n;
+	result = temp->n - temp->prev->n;
 	temp->prev->n = result;
 	temp->prev->next = NULL;
 	gvar->top = temp->prev;
