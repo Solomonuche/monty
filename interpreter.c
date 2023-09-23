@@ -23,10 +23,15 @@ void interpret(char **tokens, unsigned int line_number)
 		{"div", div_ops},
 		{"mul", mul_ops},
 		{"mod", mod_ops},
-		{"#", nop},
 		{NULL, NULL}
 	};
 
+
+	if (tokens[0][0] == '#')
+	{
+		free_tokens(tokens);
+		return;
+	}
 
 	for (j = 0; ops[j].opcode != NULL; j++)
 	{
