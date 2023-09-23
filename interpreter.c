@@ -23,6 +23,7 @@ void interpret(char **tokens, unsigned int line_number)
 		{"div", div_ops},
 		{"mul", mul_ops},
 		{"mod", mod_ops},
+		{"#", nop},
 		{NULL, NULL}
 	};
 
