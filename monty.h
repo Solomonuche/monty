@@ -37,6 +37,7 @@ typedef struct globa_s
 	int argc;
 	stack_t *stack;
 	char **argv;
+	stack_t *top;
 } globa_v;
 
 extern globa_v *gvar;
@@ -68,6 +69,11 @@ void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
 void create_node(stack_t **newnode, unsigned int line_number);
 int isInteger(char *str);
+void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
 
 
 void intialize_var(void);

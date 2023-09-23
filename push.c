@@ -10,23 +10,19 @@
 
 void push(stack_t **stack, unsigned int line_number)
 {
-	stack_t *newnode, *temp;
+	stack_t *newnode;
 
 	create_node(&newnode, line_number);
 
 	if (*stack == NULL)
 	{
-		*stack = newnode;
+		*stack = gvar->top = newnode;
 	}
 	else
 	{
-		temp = *stack;
 
-		while (temp->next != 0)
-		{
-			temp = temp->next;
-		}
-		newnode->prev = temp;
-		temp->next = newnode;
+		newnode->prev = gvar->top;
+		gvar->top->next = newnode;
+		gvar->top = newnode;
 	}
 }

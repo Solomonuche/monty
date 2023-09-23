@@ -17,4 +17,5 @@ void intialize_var(void)
 	gvar->argc = 0;
 	gvar->stack = NULL;
 	gvar->argv = NULL;
+	gvar->top = NULL;
 }

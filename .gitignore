@@ -1,5 +1,6 @@
 # Ignore a bytecodes test directory and its contents
 bytecodes/
+alx_test_suite/
 
 # Ignore test exe
 monty
