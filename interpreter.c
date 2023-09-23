@@ -20,6 +20,7 @@ void interpret(char **tokens, unsigned int line_number)
 		{"add", add},
 		{"nop", nop},
 		{"sub", sub},
+		{"div", div_ops},
 		{NULL, NULL}
 	};
 
