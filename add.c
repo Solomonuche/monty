@@ -19,14 +19,11 @@ void add(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	temp = *stack;
+	temp = gvar->top;
 
-	while (temp->next != 0)
-	{
-		temp = temp->next;
-	}
 	result = temp->prev->n + temp->n;
 	temp->prev->n = result;
 	temp->prev->next = NULL;
+	gvar->top = temp->prev;
 	free(temp);
 }
