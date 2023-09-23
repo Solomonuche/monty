@@ -74,10 +74,12 @@ void pop(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void nop(stack_t **stack, unsigned int line_number);
+void sub(stack_t **stack, unsigned int line_number);
 
 
 void intialize_var(void);
 void malloc_error(void);
 void free_tokens(char **tokens);
 void free_gvar(void);
+
 #endif
