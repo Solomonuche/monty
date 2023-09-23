@@ -16,7 +16,7 @@ int main(int ac, char **av)
 	char *buf = NULL;
 	char **tokens = NULL;
 	size_t size = 0;
-       	ssize_t nb_read = 0;
+	ssize_t nb_read = 0;
 
 	intialize_var();
 
