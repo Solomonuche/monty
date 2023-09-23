@@ -9,8 +9,6 @@
 
 void pint(stack_t **stack, unsigned int line_number)
 {
-	stack_t *temp;
-
 
 	if (*stack == NULL)
 	{
@@ -19,12 +17,5 @@ void pint(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	temp = *stack;
-
-	while (temp->next != 0)
-	{
-		temp = temp->next;
-	}
-
-	printf("%d\n", temp->n);
+	printf("%d\n", gvar->top->n);
 }
