@@ -78,6 +78,7 @@ void sub(stack_t **stack, unsigned int line_number);
 void div_ops(stack_t **stack, unsigned int line_number);
 void mul_ops(stack_t **stack, unsigned int line_number);
 void mod_ops(stack_t **stack, unsigned int line_number);
+void pchar_ops(stack_t **stack, unsigned int line_number);
 
 
 void intialize_var(void);
