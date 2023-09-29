@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * mul - a function that mul two top contents of a stack
+ * mul_ops - a function that mui two top contents of a stack
  * @stack: linked list
  * @line_number: line number
  *
