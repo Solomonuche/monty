@@ -49,7 +49,7 @@ void create_node(stack_t **newnode, unsigned int line_number)
 
 	if (gvar->argc < 1 || !isInteger(gvar->argv[1]))
 	{
-		fprintf(stderr, "L%d: usage: push integer", line_number);
+		fprintf(stderr, "L%d: usage: push integer ", line_number);
 		free(*newnode);
 		free_gvar();
 		exit(EXIT_FAILURE);

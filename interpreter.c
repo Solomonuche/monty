@@ -46,7 +46,7 @@ void interpret(char **tokens, unsigned int line_number)
 	}
 
 
-	fprintf(stderr, "L%d: Unknown instruction %s\n", line_number, tokens[0]);
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, tokens[0]);
 
 	free_tokens(tokens);
 	exit(EXIT_FAILURE);
